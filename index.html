@@ -1,15 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>我的第一个网站</title>
+    <title>宝贝老公，儿童节快乐！</title>
     <style>
-        body { font-family: Arial; text-align: center; padding: 50px; }
-        h1 { color: #0070f3; }
+        body {
+            font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 50px 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            max-width: 600px;
+            width: 90%;
+            animation: fadeIn 1s ease-in;
+        }
+        
+        h1 {
+            color: #ff6b6b;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .老公 {
+            color: #4ecdc4;
+            font-size: 1.8em;
+            margin: 20px 0;
+        }
+        
+        .heart {
+            color: #ff4757;
+            font-size: 3em;
+            animation: heartbeat 1.5s ease infinite;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .message {
+            font-size: 1.2em;
+            color: #333;
+            line-height: 1.6;
+            margin: 30px 0;
+        }
+        
+        .emoji {
+            font-size: 2em;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>🚀 我的网站上线了！</h1>
-    <p>通过 GitHub + Vercel 自动部署</p>
-    <p>更新时间：2026年</p>
+    <div class="card">
+        <div class="heart">❤️</div>
+        <h1>宝贝老公</h1>
+        <div class="老公">👨‍👩‍👧‍👦 儿童节快乐！ 👨‍👩‍👧‍👦</div>
+        <div class="message">
+            愿你永远保持童心<br>
+            每一天都开开心心<br>
+            像孩子一样无忧无虑<br>
+            因为有你在，每一天都像儿童节一样甜蜜！
+        </div>
+        <div class="emoji">
+            🎈🎉🎁🍭🧸🎊
+        </div>
+        <p style="margin-top: 30px; color: #999; font-size: 0.9em;">
+            爱你的宝贝 💕 2026.06.01
+        </p>
+    </div>
 </body>
 </html>
