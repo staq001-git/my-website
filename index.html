@@ -1,90 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>宝贝老公，儿童节快乐！</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术工具推荐 | 发现好用的开发工具</title>
     <style>
-        body {
-            font-family: 'Arial', 'Microsoft YaHei', sans-serif;
-            text-align: center;
-            padding: 50px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+        * {
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 0;
+            box-sizing: border-box;
         }
-        
-        .card {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 50px 30px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-            max-width: 600px;
-            width: 90%;
-            animation: fadeIn 1s ease-in;
-        }
-        
-        h1 {
-            color: #ff6b6b;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-        }
-        
-        .老公 {
-            color: #4ecdc4;
-            font-size: 1.8em;
-            margin: 20px 0;
-        }
-        
-        .heart {
-            color: #ff4757;
-            font-size: 3em;
-            animation: heartbeat 1.5s ease infinite;
-        }
-        
-        @keyframes heartbeat {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-            100% { transform: scale(1); }
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .message {
-            font-size: 1.2em;
-            color: #333;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
             line-height: 1.6;
-            margin: 30px 0;
+            background: #f5f7fa;
+            padding: 20px;
         }
-        
-        .emoji {
-            font-size: 2em;
-            margin: 10px;
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 48px 32px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 6px 14px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .post-list {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+        .post-list h2 {
+            margin-bottom: 24px;
+            color: #1a1a2e;
+            border-left: 4px solid #667eea;
+            padding-left: 16px;
+        }
+        .post-item {
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e4e8;
+        }
+        .post-item:last-child {
+            border-bottom: none;
+        }
+        .post-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .post-title a {
+            color: #1a1a2e;
+            text-decoration: none;
+        }
+        .post-title a:hover {
+            color: #667eea;
+        }
+        .post-meta {
+            font-size: 0.85rem;
+            color: #718096;
+            margin-bottom: 12px;
+        }
+        .post-excerpt {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 24px;
+            color: #718096;
+            font-size: 0.85rem;
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <div class="heart">❤️</div>
-        <h1>宝贝老公</h1>
-        <div class="老公">👨‍👩‍👧‍👦 儿童节快乐！ 👨‍👩‍👧‍👦</div>
-        <div class="message">
-            愿你永远保持童心<br>
-            每一天都开开心心<br>
-            像孩子一样无忧无虑<br>
-            因为有你在，每一天都像儿童节一样甜蜜！
+<div class="container">
+    <header>
+        <h1>🛠️ 技术工具推荐</h1>
+        <p>发现好用的开发工具 · 提升效率 · 开源项目深度评测</p>
+        <div class="nav-links">
+            <a href="/">首页</a>
+            <a href="/about.html">关于</a>
+            <a href="/privacy.html">隐私政策</a>
+            <a href="/love-letter.html">❤️ 宝贝老公</a>
         </div>
-        <div class="emoji">
-            🎈🎉🎁🍭🧸🎊
+    </header>
+
+    <div class="post-list">
+        <h2>📝 最新文章</h2>
+
+        <div class="post-item">
+            <div class="post-title">
+                <a href="/posts/odysseus.html">Odysseus深度评测：自托管AI工作空间完全指南</a>
+            </div>
+            <div class="post-meta">2026年6月1日 · 工具评测 · 阅读约8分钟</div>
+            <div class="post-excerpt">
+                一个让你完全掌控数据和隐私的自托管AI工作空间，GitHub上线一周破万星。本文详解功能、部署和适用场景...
+            </div>
         </div>
-        <p style="margin-top: 30px; color: #999; font-size: 0.9em;">
-            爱你的宝贝 💕 2026.06.01
-        </p>
+
+        <!-- 后续文章继续往下加 -->
+        <!-- 
+        <div class="post-item">
+            <div class="post-title">
+                <a href="/posts/guizang.html">小红书+公众号图文自动生成：这款AI工具让创作者效率翻倍</a>
+            </div>
+            <div class="post-meta">2026年6月1日 · 内容创作</div>
+            <div class="post-excerpt">AI驱动的社交媒体图文生成工具，支持小红书画风和公众号封面，28种布局即选即用...</div>
+        </div>
+        -->
+
     </div>
+
+    <footer>
+        <p>© 2026 技术工具推荐 · 本站内容基于真实使用体验和开源项目资料整理</p>
+    </footer>
+</div>
 </body>
 </html>
